@@ -1,0 +1,17 @@
+{
+    "name": "jeremyfornarino/rf-cached",
+    "authors": [
+        {
+            "name": "jeremy-f",
+            "email": "jeremy.fornarino@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "jeremyfornarino\\rfCached\\Extract\\" : "src/jeremyfornarino/extract",
+            "jeremyfornarino\\rfCached\\Antenna\\" : "src/jeremyfornarino/Antenna",
+            "jeremyfornarino\\rfCached\\" : "src/jeremyfornarino/rf-cached",
+            "jeremyfornarino\\" : "src/jeremyfornarino"
+        }
+    }
+}

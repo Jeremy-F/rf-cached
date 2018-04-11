@@ -1,0 +1,47 @@
+{
+  "antennas":[
+    {
+      "name":"Dipole Talves",
+      "dir":"bandDatabase_TAlves\/",
+      "type":"dipole",
+      "bands":[
+        {
+          "name":"RadioAmateur_AntenneTAlves",
+          "startFrequency":11,
+          "stopFrequency":13,
+          "rbw":10,
+          "points":1001,
+          "frequencyUnit":2,
+          "rbwUnit":3,
+          "bandDivider":1,
+          "charts":[
+          ]
+        },
+        {
+          "name":"RadioAmateur_AntenneTAlves_400",
+          "startFrequency":11,
+          "stopFrequency":13,
+          "rbw":390,
+          "points":50,
+          "frequencyUnit":2,
+          "rbwUnit":3,
+          "bandDivider":1,
+          "charts":[]
+        }
+      ]
+    },
+    {
+      "name":"Discon OMIC",
+      "dir":"omic",
+      "type":"discon",
+      "bands": [{"name":"BandeRadiodiffusion","startFrequency":47,"stopFrequency":68,"rbw":50,"points":420,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"SystemeAeronautique","startFrequency":74,"stopFrequency":76,"rbw":10,"points":200,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"BandeRadioFM","startFrequency":87,"stopFrequency":108,"rbw":50,"points":420,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"IlsVor","startFrequency":108,"stopFrequency":144,"rbw":10,"points":3600,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RadioNumeriqueTerrestre","startFrequency":174,"stopFrequency":225,"rbw":500,"points":72,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"SystemeAeronautique2","startFrequency":318,"stopFrequency":322,"rbw":10,"points":400,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"TeleNumTSeul","startFrequency":470,"stopFrequency":694,"rbw":2000,"points":112,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"TeleNT4G","startFrequency":694,"stopFrequency":790,"rbw":1000,"points":96,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"Reseau4G","startFrequency":790,"stopFrequency":862,"rbw":1000,"points":72,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"Reseau2G3G","startFrequency":862,"stopFrequency":960,"rbw":100,"points":980,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"SystemeAeronautiqueV3","startFrequency":960,"stopFrequency":1164,"rbw":50,"points":4080,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"Radiolocalisations","startFrequency":2310,"stopFrequency":2400,"rbw":50,"points":1800,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RadiolocalisationNavigation","startFrequency":2700,"stopFrequency":2900,"rbw":500,"points":400,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RadioLocalisationRadar","startFrequency":2900,"stopFrequency":3400,"rbw":500,"points":1000,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1}]
+    },
+    {
+      "name":"Discon ESIEE",
+      "dir":"bandDatabase-22-01-2018",
+      "type":"discon",
+      "bands":
+        [{"name":"Bande1Radiodiffusion","startFrequency":47,"stopFrequency":68,"rbw":50,"points":420,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"SystemAeronautique","startFrequency":74,"stopFrequency":76,"rbw":500,"points":4,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RadioFM","startFrequency":87,"stopFrequency":108,"rbw":50,"points":420,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"ILSVOR","startFrequency":108,"stopFrequency":144,"rbw":500,"points":72,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RNT","startFrequency":174,"stopFrequency":225,"rbw":500,"points":102,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"SystemAeronautique2","startFrequency":318,"stopFrequency":322,"rbw":500,"points":8,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"TNTSeul","startFrequency":470,"stopFrequency":694,"rbw":2000,"points":112,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"TNTReseauxMobiles","startFrequency":694,"stopFrequency":790,"rbw":1000,"points":96,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RM4G","startFrequency":790,"stopFrequency":862,"rbw":1000,"points":72,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RM2G3G","startFrequency":862,"stopFrequency":960,"rbw":100,"points":980,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"SystemesAeronautiquesv3","startFrequency":960,"stopFrequency":1164,"rbw":500,"points":408,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"SAOuRadar","startFrequency":1215,"stopFrequency":1370,"rbw":500,"points":310,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RM2G4G2","startFrequency":1700,"stopFrequency":1880,"rbw":100,"points":1800,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RM3G","startFrequency":1880,"stopFrequency":1980,"rbw":1000,"points":100,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RM3G2","startFrequency":2110,"stopFrequency":2170,"rbw":1000,"points":60,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"Radiolocalisation","startFrequency":2310,"stopFrequency":2400,"rbw":500,"points":180,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"Wifi24","startFrequency":2400,"stopFrequency":2484,"rbw":1000,"points":84,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RM4G2","startFrequency":2500,"stopFrequency":2690,"rbw":1000,"points":190,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RadioLocORRadioNav","startFrequency":2700,"stopFrequency":2900,"rbw":500,"points":400,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"RadioLocRADAR","startFrequency":2900,"stopFrequency":3400,"rbw":500,"points":1000,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"BandeLibre","startFrequency":863,"stopFrequency":870,"rbw":10,"points":700,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1},{"name":"ISM","startFrequency":433,"stopFrequency":435,"rbw":10,"points":200,"frequencyUnit":2,"rbwUnit":3,"bandDivider":1}]
+    }
+  ]
+}
