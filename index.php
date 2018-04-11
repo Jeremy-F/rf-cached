@@ -1,6 +1,6 @@
 <?php
-define("DATA_JSON", "data.json");
-define("DIR_ANTENNAS", "data/");
+//define("DATA_JSON", "data.json");
+//define("DIR_ANTENNAS", "data/");
 /*
 class Run{
     public function start(){
@@ -19,10 +19,12 @@ class Run{
     }
 }*/
 
-(new Run())->start();
+//(new Run())->start();
 
-/*
+
 $childrens = [];
+
+$jeSuisEnTrain = false;
 
 $bands = [
     ["name" => "nom de la band"],
@@ -34,13 +36,15 @@ foreach($bands AS $band){
     if($pid){
         $childrens[] = $pid;
     }else{
-        sleep(5);
+        while ($jeSuisEnTrain){
+            echo "Je suis en train...";
+            sleep(1);
+        }
+        sleep(20);
         exit(0);
     }
 }
 
 foreach($childrens AS $children){
-    echo "J'attent le children : ".$children."\n";
     pcntl_waitpid($children, $status);
-    //echo " : ".$status."\n";
-}*/
+}

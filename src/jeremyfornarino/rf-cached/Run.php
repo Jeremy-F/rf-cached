@@ -61,26 +61,30 @@ class Run{
         echo "Execution :  $time secondes\n";
     }
     public function saveResults($antennaName, $bandName, $chartType, $result){
-        $fileMax = $this->pathNameGenerator();
-        file_put_contents($fileMax, json_encode($result));
-        $this->loadData();
+
+        $filePath = $this->pathNameGenerator();
+        file_put_contents($filePath, json_encode($result));
+
+        $data = [];
         foreach($this->data->antennas AS $antenna){
             if($antenna->name == $antennaName){
                 foreach($antenna->bands AS $bandKey => $band){
                     if($band->name == $bandName){
-                        if(!isset($band->charts)) $band->charts = [];
-                        $band->charts[] = [
-                            "fileName" => basename($fileMax),
+                        $data = [
+                            "band" => $bandName,
+                            "antenna" => $antennaName,
+                            "fileName" => basename($filePath),
                             "type" => $chartType
                         ];
                     }
                 }
-                $this->saveData();
             }
         }
+        $savedFilePath = $this->pathNameGenerator("saved/");
+        file_put_contents($savedFilePath, json_encode($data));
     }
-    public function pathNameGenerator(){
-        return DIR_RESULTS.md5(uniqid().rand(0,1000).rand(0,1000).uniqid()).".json";
+    public function pathNameGenerator(string $middleFix = ""){
+        return DIR_RESULTS.$middleFix.md5(uniqid().rand(0,1000).rand(0,1000).uniqid()).".json";
     }
     public function loadData(){
         $jsonDataContent = file_get_contents(DATA_JSON);
