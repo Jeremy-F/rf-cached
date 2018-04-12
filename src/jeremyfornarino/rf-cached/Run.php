@@ -100,7 +100,7 @@ class Run{
             if ($antenna->name == $antennaName) {
                 foreach ($antenna->bands AS $bandKey => $band) {
                     if ($band->name == $bandName) {
-                        if(isset($band->charts)){$band->charts = [];}
+                        if(!isset($band->charts)){$band->charts = [];}
                         $band->charts[] = ["fileName" => $fileName,"type" => $type];
                         $antenna->bands[$bandKey] = $band;
                         $this->data->antennas[$antennaKey] = $antenna;
