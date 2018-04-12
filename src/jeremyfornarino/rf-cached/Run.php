@@ -93,4 +93,23 @@ class Run{
     public function saveData(){
         file_put_contents(DATA_JSON, json_encode($this->data));
     }
+
+    public function realySave($antennaName, $bandName, $fileName, $type){
+        $this->loadData();
+        foreach($this->data->antennas AS $antennaKey => $antenna) {
+            if ($antenna->name == $antennaName) {
+                foreach ($antenna->bands AS $bandKey => $band) {
+                    if ($band->name == $bandName) {
+                        if(isset($band->charts)){$band->charts = [];}
+                        $band->charts[] = ["fileName" => $fileName,"type" => $type];
+                        $antenna->bands[$bandKey] = $band;
+                        $this->data->antennas[$antennaKey] = $antenna;
+                        break;
+                    }
+                }
+                break;
+            }
+        }
+        $this->saveData();
+    }
 }
