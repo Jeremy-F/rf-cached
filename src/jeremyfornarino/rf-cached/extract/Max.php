@@ -30,6 +30,7 @@ class Max extends Extract{
                 }
             }
         }
+        ksort($results);
         $realResults = ["data" => [], "xkey" => "frequency", "ykey" => ['absolutePower']];
         foreach($results AS $frequency => $absolutePower){
             $realResults["data"][] = [
